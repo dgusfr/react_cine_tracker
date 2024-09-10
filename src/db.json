@@ -1,28 +1,39 @@
 {
-    "videos": [
-        {
-            "id": 1,
-            "titulo": "O labirinto do Logcat",
-            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img2.png",
-            "link": "https://www.youtube.com/embed/ypvGqZGJBls"
-        },
-        {
-            "id": 2,
-            "titulo": "Um componente no espaço",
-            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img1.png",
-            "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ"
-        },
-        {
-            "id": 3,
-            "titulo": "O poderoso JavaScript",
-            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img4.png",
-            "link": "https://www.youtube.com/embed/N1BSG02z-Mw"
-        },
-        {
-            "id": 4,
-            "titulo": "Dart, o Caçador de Andróides",
-            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img3.png",
-            "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
-        }
-    ]
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Harry Potter e a Pedra Filosofal",
+      "capa": "https://image.tmdb.org/t/p/w500/6AtbllPR8kg2vkYdiOes79I0WMy.jpg",
+      "link": "/filmes/1",
+      "descricao": "Harry descobre que é um bruxo e vai para a Escola de Magia e Bruxaria de Hogwarts, onde embarca em uma série de aventuras."
+    },
+    {
+      "id": 2,
+      "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+      "capa": "https://image.tmdb.org/t/p/w500/56zTpe2xvaA4alU51sRWPoKPYZy.jpg",
+      "link": "/filmes/2",
+      "descricao": "Frodo e seus amigos partem em uma jornada para destruir o anel, enfrentando desafios épicos."
+    },
+    {
+      "id": 3,
+      "titulo": "Star Wars: Uma Nova Esperança",
+      "capa": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+      "link": "/filmes/3",
+      "descricao": "Luke Skywalker se junta a um grupo de heróis para salvar a galáxia do maléfico Império Galáctico."
+    },
+    {
+      "id": 4,
+      "titulo": "Vingadores: Ultimato",
+      "capa": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+      "link": "/filmes/4",
+      "descricao": "Os Vingadores se unem uma última vez para derrotar Thanos e restaurar o universo."
+    },
+    {
+      "id": 5,
+      "titulo": "Matrix",
+      "capa": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "link": "/filmes/5",
+      "descricao": "Neo descobre a verdade por trás de sua realidade e lidera a resistência contra as máquinas."
+    }
+  ]
 }
