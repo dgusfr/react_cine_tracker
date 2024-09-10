@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import styles from "./Player.module.css";
 import NaoEncontrada from "pages/NaoEncontrada";
 import { useEffect, useState } from "react";
+// Atualizar o caminho de importação do db.json para o novo local
 import db from "../../db.json";
 
 function Player() {
