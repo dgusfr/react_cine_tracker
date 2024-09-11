@@ -1,7 +1,21 @@
 .link {
-    color: var(--branco);
-    font-size: 18px;
-    font-weight: 400;
-    padding: 1em;
-    text-decoration: none;
+  color: var(--branco);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 1em;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .link {
+    font-size: 16px; /* Reduz o tamanho da fonte para telas até 800px */
+    padding: 0.8em; /* Reduz o padding */
+  }
+}
+
+@media (max-width: 400px) {
+  .link {
+    font-size: 14px; /* Reduz o tamanho da fonte para telas até 400px */
+    padding: 0.6em; /* Reduz ainda mais o padding */
+  }
 }

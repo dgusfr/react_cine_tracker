@@ -3,3 +3,17 @@
   text-align: center;
   max-width: 1200px;
 }
+
+@media (max-width: 800px) {
+  .container section {
+    margin: 1.5em auto;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container section {
+    margin: 1em auto;
+    max-width: 100%;
+  }
+}
