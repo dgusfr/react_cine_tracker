@@ -1,13 +1,27 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 colunas para os cards */
-  gap: 20px; /* Espaçamento entre os cards */
-  padding: 10px; /* Mantém o espaçamento interno */
-  margin: 0 auto; /* Centraliza a grid horizontalmente */
-  max-width: 1200px; /* Ajuste o valor para ocupar mais espaço, conforme necessário */
+  grid-template-columns: repeat(5, 1fr); /* Para telas grandes */
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .capa {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas até 800px */
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr); /* 1 coluna para telas até 400px */
+    max-width: 100%;
+  }
 }
