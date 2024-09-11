@@ -1,10 +1,8 @@
-import Banner from "components/Banner";
 import Titulo from "components/Titulo";
 import { useParams } from "react-router-dom";
 import styles from "./Player.module.css";
 import NaoEncontrada from "pages/NaoEncontrada";
 import { useEffect, useState } from "react";
-// Atualizar o caminho de importação do db.json para o novo local
 import db from "../../db.json";
 
 function Player() {
@@ -26,13 +24,12 @@ function Player() {
 
   return (
     <>
-      <Banner imagem="player" />
       <Titulo>
         <h1>{filme.titulo}</h1>
       </Titulo>
       <section className={styles.container}>
         <img src={filme.capa} alt={filme.titulo} className={styles.capa} />
-        <p>Descrição do filme aqui...</p>
+        <p>{filme.descricao}</p> {/* Renderiza a descrição do filme */}
       </section>
     </>
   );

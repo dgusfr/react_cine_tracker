@@ -9,7 +9,6 @@ function Inicio() {
   const [filmes, setFilmes] = useState([]);
 
   useEffect(() => {
-    // Carrega os filmes diretamente do db.json
     setFilmes(db.filmes);
   }, []);
 
