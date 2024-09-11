@@ -1,4 +1,11 @@
 .container {
-    display: flex;
-    justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Define 6 colunas */
+  gap: 20px; /* Espaçamento entre as capas */
+  padding: 20px;
+}
+
+.capa {
+  width: 100%; /* Garante que a imagem ocupe 100% da coluna */
+  height: auto; /* Mantém a proporção da imagem */
 }
