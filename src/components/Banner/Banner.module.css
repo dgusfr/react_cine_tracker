@@ -10,6 +10,13 @@
   background-size: cover;
 }
 
+@media (min-width: 801px) and (max-width: 1500px) {
+  .banner {
+    height: 100%;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 800px) {
   .banner {
     height: 200px;
