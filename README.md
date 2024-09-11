@@ -79,21 +79,25 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 2. Navegue até o diretório do projeto:
 
-````bash
+```bash
   cd cinetracker
+```
 
 3. Instale as dependências:
 
 ```bash
   npm install
+```
 
 4. Execute o projeto:
+
 ```bash
 npm start
+```
 
 5. Acesse a aplicação em seu navegador no endereço:
-```http://localhost:3000```
+   `http://localhost:3000`
 
 ## Autor
+
 Desenvolvido por Diego Franco.
-````
