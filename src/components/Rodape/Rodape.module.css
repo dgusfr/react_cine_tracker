@@ -33,23 +33,23 @@
 
 @media (max-width: 800px) {
   .rodape {
-    padding: 2em 10em; /* Reduz o padding para telas até 800px */
+    padding: 2em 10em;
   }
   .texto {
-    font-size: 0.9em; /* Ajusta o tamanho da fonte */
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 400px) {
   .rodape {
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
-    padding: 2em 2em; /* Reduz o padding lateral */
+    flex-direction: column;
+    padding: 2em 2em;
   }
   .texto {
-    font-size: 0.8em; /* Fonte menor para caber em telas pequenas */
+    font-size: 0.8em;
   }
   .links {
-    flex-direction: column; /* Alinha os links verticalmente */
+    flex-direction: column;
     gap: 0.5em;
   }
 }
