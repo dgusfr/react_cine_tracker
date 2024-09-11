@@ -16,6 +16,15 @@ nav {
   gap: 1em;
 }
 
+@media (min-width: 801px) and (max-width: 1500px) {
+  .cabecalho {
+    padding: 1.1em 15em;
+  }
+  .logo {
+    width: 130px;
+  }
+}
+
 @media (max-width: 800px) {
   .cabecalho {
     padding: 1.1em 10em;

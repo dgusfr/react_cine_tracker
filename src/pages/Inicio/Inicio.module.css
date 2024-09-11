@@ -12,6 +12,13 @@
   height: auto;
 }
 
+@media (min-width: 801px) and (max-width: 1500px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+  }
+}
+
 @media (max-width: 800px) {
   .container {
     grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas até 800px */

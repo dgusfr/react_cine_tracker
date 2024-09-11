@@ -22,6 +22,15 @@
   gap: 1em;
 }
 
+@media (min-width: 801px) and (max-width: 1500px) {
+  .rodape {
+    padding: 2em 15em;
+  }
+  .texto {
+    font-size: 0.95em;
+  }
+}
+
 @media (max-width: 800px) {
   .rodape {
     padding: 2em 10em; /* Reduz o padding para telas até 800px */
