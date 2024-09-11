@@ -34,6 +34,55 @@
       "capa": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
       "link": "/filmes/5",
       "descricao": "Neo descobre a verdade por trás de sua realidade e lidera a resistência contra as máquinas."
+    },
+    {
+      "id": 6,
+      "titulo": "A Origem",
+      "capa": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+      "link": "/filmes/6",
+      "descricao": "Dom Cobb é um ladrão especializado em extrair segredos do subconsciente durante os sonhos. Ele é contratado para uma missão de inserção de ideias."
+    },
+    {
+      "id": 7,
+      "titulo": "Titanic",
+      "capa": "https://image.tmdb.org/t/p/w500/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
+      "link": "/filmes/7",
+      "descricao": "Um romance épico entre Jack e Rose a bordo do infame navio Titanic, enfrentando o desastre que os separa."
+    },
+    {
+      "id": 8,
+      "titulo": "Gladiador",
+      "capa": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+      "link": "/filmes/8",
+      "descricao": "Máximo, um general romano traído, torna-se gladiador para buscar vingança contra o imperador corrupto."
+    },
+    {
+      "id": 9,
+      "titulo": "O Poderoso Chefão",
+      "capa": "https://image.tmdb.org/t/p/w500/eEslKSwcqmiNS6va24Pbxf2UKmJ.jpg",
+      "link": "/filmes/9",
+      "descricao": "A história da família Corleone, liderada por Don Vito Corleone, enquanto eles navegam pelo submundo do crime organizado."
+    },
+    {
+      "id": 10,
+      "titulo": "Jurassic Park",
+      "capa": "https://image.tmdb.org/t/p/w500/9i3plLl89DHMz7wcAyitd8RX0FL.jpg",
+      "link": "/filmes/10",
+      "descricao": "Um parque temático com dinossauros clonados se torna um pesadelo quando as criaturas escapam de suas jaulas."
+    },
+    {
+      "id": 11,
+      "titulo": "Pulp Fiction: Tempo de Violência",
+      "capa": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+      "link": "/filmes/11",
+      "descricao": "Histórias interligadas de criminosos, gângsteres e personagens peculiares em Los Angeles."
+    },
+    {
+      "id": 12,
+      "titulo": "Toy Story",
+      "capa": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+      "link": "/filmes/12",
+      "descricao": "Os brinquedos de Andy ganham vida quando ele não está por perto, enfrentando novas aventuras e desafios."
     }
   ]
 }
