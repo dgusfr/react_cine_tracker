@@ -9,8 +9,8 @@
 }
 
 .capa {
-  width: 100%; /* Garante que a imagem ocupe 100% do espaço do card */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%;
+  height: auto;
 }
 
 .container h2,

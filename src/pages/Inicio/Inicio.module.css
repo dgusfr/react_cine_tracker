@@ -1,11 +1,13 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Define 6 colunas */
-  gap: 20px; /* Espaçamento entre as capas */
-  padding: 20px;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas para os cards */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 10px; /* Mantém o espaçamento interno */
+  margin: 0 auto; /* Centraliza a grid horizontalmente */
+  max-width: 1200px; /* Ajuste o valor para ocupar mais espaço, conforme necessário */
 }
 
 .capa {
-  width: 100%; /* Garante que a imagem ocupe 100% da coluna */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%;
+  height: auto;
 }

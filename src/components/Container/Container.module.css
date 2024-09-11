@@ -1,4 +1,5 @@
 .container section {
-    margin: 2em 20em;
-    text-align: center;
+  margin: 2em;
+  text-align: center;
+  max-width: 1200px;
 }

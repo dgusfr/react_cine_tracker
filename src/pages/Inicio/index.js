@@ -3,7 +3,7 @@ import Card from "components/Card";
 import Titulo from "components/Titulo";
 import { useEffect, useState } from "react";
 import styles from "./Inicio.module.css";
-import db from "../../db.json"; // Importa o arquivo db.json local
+import db from "../../db.json";
 
 function Inicio() {
   const [filmes, setFilmes] = useState([]);
