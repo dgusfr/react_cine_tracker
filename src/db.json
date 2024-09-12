@@ -2,10 +2,10 @@
   "filmes": [
     {
       "id": 1,
-      "titulo": "Harry Potter e a Pedra Filosofal",
-      "capa": "https://image.tmdb.org/t/p/w500/6AtbllPR8kg2vkYdiOes79I0WMy.jpg",
+      "titulo": "Clube da Luta",
+      "capa": "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
       "link": "/filmes/1",
-      "descricao": "Harry descobre que é um bruxo e vai para a Escola de Magia e Bruxaria de Hogwarts, onde embarca em uma série de aventuras."
+      "descricao": "Um funcionário de escritório insatisfeito com sua vida forma um clube de luta clandestino com um vendedor de sabão imprevisível."
     },
     {
       "id": 2,
@@ -37,52 +37,52 @@
     },
     {
       "id": 6,
-      "titulo": "A Origem",
-      "capa": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
-      "link": "/filmes/6",
-      "descricao": "Dom Cobb é um ladrão especializado em extrair segredos do subconsciente durante os sonhos. Ele é contratado para uma missão de inserção de ideias."
-    },
-    {
-      "id": 7,
-      "titulo": "Titanic",
-      "capa": "https://image.tmdb.org/t/p/w500/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
-      "link": "/filmes/7",
-      "descricao": "Um romance épico entre Jack e Rose a bordo do infame navio Titanic, enfrentando o desastre que os separa."
-    },
-    {
-      "id": 8,
       "titulo": "Gladiador",
       "capa": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
-      "link": "/filmes/8",
+      "link": "/filmes/6",
       "descricao": "Máximo, um general romano traído, torna-se gladiador para buscar vingança contra o imperador corrupto."
     },
     {
-      "id": 9,
+      "id": 7,
       "titulo": "O Poderoso Chefão",
       "capa": "https://image.tmdb.org/t/p/w500/eEslKSwcqmiNS6va24Pbxf2UKmJ.jpg",
-      "link": "/filmes/9",
+      "link": "/filmes/7",
       "descricao": "A história da família Corleone, liderada por Don Vito Corleone, enquanto eles navegam pelo submundo do crime organizado."
     },
     {
-      "id": 10,
-      "titulo": "Jurassic Park",
-      "capa": "https://image.tmdb.org/t/p/w500/9i3plLl89DHMz7wcAyitd8RX0FL.jpg",
-      "link": "/filmes/10",
-      "descricao": "Um parque temático com dinossauros clonados se torna um pesadelo quando as criaturas escapam de suas jaulas."
+      "id": 8,
+      "titulo": "Os Incríveis",
+      "capa": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
+      "link": "/filmes/8",
+      "descricao": "Uma família de super-heróis tenta viver uma vida normal, mas logo é forçada a enfrentar uma nova ameaça."
     },
     {
-      "id": 11,
+      "id": 9,
       "titulo": "Pulp Fiction: Tempo de Violência",
       "capa": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
-      "link": "/filmes/11",
+      "link": "/filmes/9",
       "descricao": "Histórias interligadas de criminosos, gângsteres e personagens peculiares em Los Angeles."
     },
     {
-      "id": 12,
+      "id": 10,
       "titulo": "Toy Story",
       "capa": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
-      "link": "/filmes/12",
+      "link": "/filmes/10",
       "descricao": "Os brinquedos de Andy ganham vida quando ele não está por perto, enfrentando novas aventuras e desafios."
+    },
+    {
+      "id": 11,
+      "titulo": "Homem-Aranha: No Aranhaverso",
+      "capa": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+      "link": "/filmes/11",
+      "descricao": "Miles Morales assume o manto do Homem-Aranha ao lado de outras versões do herói em diferentes universos."
+    },
+    {
+      "id": 12,
+      "titulo": "O Lobo de Wall Street",
+      "capa": "https://image.tmdb.org/t/p/w500/pWHf4khOloNVfCxscsXFj3jj6gP.jpg",
+      "link": "/filmes/12",
+      "descricao": "A ascensão e queda de Jordan Belfort, um corretor de ações que se envolve em atividades criminosas."
     }
   ]
 }
