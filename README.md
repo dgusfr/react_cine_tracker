@@ -19,11 +19,9 @@ O CineTracker é um projeto de uma aplicação web destinada a ajudar os usuári
     <img src="img/js.png" alt="Logo Linguagem" width="100"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/html.png" alt="Logo Linguagem" width="100"/>
+    <img src="img/react.png" alt="Logo Linguagem" width="100"/>
   </div>
-  <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/css.png" alt="Logo Linguagem" width="100"/>
-  </div>
+
 </div>
 
 ## Status
