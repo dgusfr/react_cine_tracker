@@ -2,11 +2,7 @@
 
 O CineTracker é um projeto de uma aplicação web destinada a ajudar os usuários a organizarem seus filmes favoritos. A aplicação permite que os filmes sejam marcados como favoritos, e posteriormente exibidos em uma lista personalizada. Além disso, estamos em constante desenvolvimento, e no futuro será implementado o consumo da API da TMDB para exibir a nota de avaliação de cada filme diretamente na plataforma.
 
-## Interface
 
-<div align="center">
-  <img src="img/logo.png" alt="Imagem do Projeto" width="100">
-</div>
 
 ## Sumário
 
