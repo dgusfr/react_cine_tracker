@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useFilmeContext } from "contextos/FilmeContext";
 import Banner from "components/Banner";
@@ -8,10 +8,17 @@ import styles from "./Player.module.css";
 
 function Player() {
   const { id } = useParams();
-  const { filme, carregarFilme, loading, erro } = useFilmeContext();
+  const { carregarFilme, loading, erro } = useFilmeContext();
+  const [filme, setFilme] = useState(null);
 
   useEffect(() => {
-    carregarFilme(id);
+    const fetchFilme = async () => {
+      const dadosDoFilme = await carregarFilme(id);
+      console.log("Dados do filme no Player:", dadosDoFilme);
+      setFilme(dadosDoFilme);
+    };
+
+    fetchFilme();
   }, [id, carregarFilme]);
 
   if (loading) {

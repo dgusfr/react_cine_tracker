@@ -11,6 +11,7 @@ export function FilmeProvider({ children }) {
 
   const carregarFilme = async (id) => {
     if (filmeCache[id]) {
+      console.log("Filme carregado do cache:", filmeCache[id]);
       return filmeCache[id];
     }
 
@@ -19,12 +20,14 @@ export function FilmeProvider({ children }) {
 
     try {
       const dadosDoFilme = await buscarDetalhesDoFilme(id);
+      console.log("Filme carregado da API:", dadosDoFilme);
       setFilmeCache((prevCache) => ({
         ...prevCache,
         [id]: dadosDoFilme,
       }));
       return dadosDoFilme;
     } catch (error) {
+      console.error("Erro ao carregar o filme:", error);
       setErro("Erro ao carregar o filme. Tente novamente mais tarde.");
       return null;
     } finally {
