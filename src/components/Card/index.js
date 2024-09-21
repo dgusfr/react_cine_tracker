@@ -7,19 +7,21 @@ import { useFilmeContext } from "contextos/FilmeContext";
 import { useFavoritoContext } from "contextos/Favoritos";
 
 function Card({ id, titulo, capa }) {
-  const { carregarFilme, filme } = useFilmeContext();
+  const { carregarFilme } = useFilmeContext();
   const { favorito, adicionarFavorito } = useFavoritoContext();
   const [nota, setNota] = useState(null);
   const ehFavorito = favorito.some((fav) => fav.id === id);
 
   useEffect(() => {
     const fetchData = async () => {
-      await carregarFilme(id);
-      setNota(filme?.vote_average);
+      const filme = await carregarFilme(id);
+      if (filme) {
+        setNota(filme.vote_average);
+      }
     };
 
     fetchData();
-  }, [id, carregarFilme, filme]);
+  }, [id, carregarFilme]);
 
   return (
     <div className={styles.container}>

@@ -5,26 +5,35 @@ const FilmeContext = createContext();
 FilmeContext.displayName = "FilmeContext";
 
 export function FilmeProvider({ children }) {
-  const [filme, setFilme] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [filmeCache, setFilmeCache] = useState({});
+  const [loading, setLoading] = useState(false);
   const [erro, setErro] = useState(null);
 
   const carregarFilme = async (id) => {
+    if (filmeCache[id]) {
+      return filmeCache[id];
+    }
+
     setLoading(true);
     setErro(null);
 
     try {
       const dadosDoFilme = await buscarDetalhesDoFilme(id);
-      setFilme(dadosDoFilme);
+      setFilmeCache((prevCache) => ({
+        ...prevCache,
+        [id]: dadosDoFilme,
+      }));
+      return dadosDoFilme;
     } catch (error) {
-      setErro(error.message);
+      setErro("Erro ao carregar o filme. Tente novamente mais tarde.");
+      return null;
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <FilmeContext.Provider value={{ filme, carregarFilme, loading, erro }}>
+    <FilmeContext.Provider value={{ carregarFilme, loading, erro }}>
       {children}
     </FilmeContext.Provider>
   );
@@ -37,5 +46,3 @@ export function useFilmeContext() {
   }
   return context;
 }
-
-export default FilmeContext;
