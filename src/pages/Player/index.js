@@ -1,22 +1,26 @@
+import Banner from "components/Banner";
 import Titulo from "components/Titulo";
 import { useParams } from "react-router-dom";
 import styles from "./Player.module.css";
 import NaoEncontrada from "pages/NaoEncontrada";
-import { useEffect, useState } from "react";
-import db from "../../db.json";
+import { useFilmeContext } from "contextos/FilmeContext";
+import { useEffect } from "react";
 
 function Player() {
-  const [filme, setFilme] = useState();
-  const parametros = useParams();
+  const { id } = useParams();
+  const { filme, carregarFilme, loading, erro } = useFilmeContext();
 
   useEffect(() => {
-    const filmeEncontrado = db.filmes.find(
-      (filme) => filme.id === parseInt(parametros.id)
-    );
-    if (filmeEncontrado) {
-      setFilme(filmeEncontrado);
-    }
-  }, [parametros.id]);
+    carregarFilme(id);
+  }, [id, carregarFilme]);
+
+  if (loading) {
+    return <div>Carregando...</div>;
+  }
+
+  if (erro) {
+    return <div>{erro}</div>;
+  }
 
   if (!filme) {
     return <NaoEncontrada />;
@@ -24,12 +28,13 @@ function Player() {
 
   return (
     <>
+      <Banner imagem="player" />
       <Titulo>
-        <h1>{filme.titulo}</h1>
+        <h1>{filme.title}</h1>
       </Titulo>
       <section className={styles.container}>
-        <img src={filme.capa} alt={filme.titulo} className={styles.capa} />
-        <p>{filme.descricao}</p> {/* Renderiza a descrição do filme */}
+        <p>{filme.overview}</p>
+        <p>Nota: {filme.vote_average}/10</p>
       </section>
     </>
   );
