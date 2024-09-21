@@ -13,7 +13,6 @@ function AppRoutes() {
           <Route index element={<Inicio />} />
           <Route path="favoritos" element={<Favoritos />} />
           <Route path="filmes/:id" element={<Player />} />{" "}
-          {/* Rota dinâmica atualizada */}
           <Route path="*" element={<NaoEncontrada />} />
         </Route>
       </Routes>

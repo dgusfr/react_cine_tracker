@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import AppRoutes from 'routes.js';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import AppRoutes from "routes";
+import { FilmeProvider } from "contextos/FilmeContext";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <AppRoutes />
-  </React.StrictMode>
+    <FilmeProvider>
+      <AppRoutes />
+    </FilmeProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
