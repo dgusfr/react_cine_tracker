@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Card.module.css";
 import iconeFavoritar from "./favoritar.png";
 import iconeDesfavoritar from "./desfavoritar.png";
 import { Link } from "react-router-dom";
 import { useFilmeContext } from "contextos/FilmeContext";
+import { useFavoritoContext } from "contextos/Favoritos";
 
 function Card({ id, titulo, capa }) {
   const { carregarFilme, filme } = useFilmeContext();
+  const { favorito, adicionarFavorito } = useFavoritoContext();
   const [nota, setNota] = useState(null);
+  const ehFavorito = favorito.some((fav) => fav.id === id);
 
   useEffect(() => {
     const fetchData = async () => {

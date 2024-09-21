@@ -1,3 +1,9 @@
+import React, { createContext, useState, useContext } from "react";
+import { buscarDetalhesDoFilme } from "services/apiService";
+
+const FilmeContext = createContext();
+FilmeContext.displayName = "FilmeContext";
+
 export function FilmeProvider({ children }) {
   const [filme, setFilme] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -23,3 +29,13 @@ export function FilmeProvider({ children }) {
     </FilmeContext.Provider>
   );
 }
+
+export function useFilmeContext() {
+  const context = useContext(FilmeContext);
+  if (!context) {
+    throw new Error("useFilmeContext must be used within a FilmeProvider");
+  }
+  return context;
+}
+
+export default FilmeContext;

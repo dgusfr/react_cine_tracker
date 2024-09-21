@@ -1,3 +1,11 @@
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { useFilmeContext } from "contextos/FilmeContext";
+import Banner from "components/Banner";
+import Titulo from "components/Titulo";
+import NaoEncontrada from "pages/NaoEncontrada";
+import styles from "./Player.module.css";
+
 function Player() {
   const { id } = useParams();
   const { filme, carregarFilme, loading, erro } = useFilmeContext();
@@ -31,3 +39,5 @@ function Player() {
     </>
   );
 }
+
+export default Player;
