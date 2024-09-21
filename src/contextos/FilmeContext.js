@@ -1,9 +1,3 @@
-import React, { createContext, useState, useEffect, useContext } from "react";
-import { buscarDetalhesDoFilme } from "services/apiService";
-
-export const FilmeContext = createContext();
-FilmeContext.displayName = "FilmeContext";
-
 export function FilmeProvider({ children }) {
   const [filme, setFilme] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -17,7 +11,7 @@ export function FilmeProvider({ children }) {
       const dadosDoFilme = await buscarDetalhesDoFilme(id);
       setFilme(dadosDoFilme);
     } catch (error) {
-      setErro("Erro ao carregar o filme. Tente novamente mais tarde.");
+      setErro(error.message);
     } finally {
       setLoading(false);
     }
@@ -28,12 +22,4 @@ export function FilmeProvider({ children }) {
       {children}
     </FilmeContext.Provider>
   );
-}
-
-export function useFilmeContext() {
-  const context = useContext(FilmeContext);
-  if (!context) {
-    throw new Error("useFilmeContext must be used within a FilmeProvider");
-  }
-  return context;
 }
