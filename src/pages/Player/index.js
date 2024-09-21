@@ -1,11 +1,3 @@
-import Banner from "components/Banner";
-import Titulo from "components/Titulo";
-import { useParams } from "react-router-dom";
-import styles from "./Player.module.css";
-import NaoEncontrada from "pages/NaoEncontrada";
-import { useFilmeContext } from "contextos/FilmeContext";
-import { useEffect } from "react";
-
 function Player() {
   const { id } = useParams();
   const { filme, carregarFilme, loading, erro } = useFilmeContext();
@@ -15,11 +7,11 @@ function Player() {
   }, [id, carregarFilme]);
 
   if (loading) {
-    return <div>Carregando...</div>;
+    return <div className={styles.loading}>Carregando o filme...</div>;
   }
 
   if (erro) {
-    return <div>{erro}</div>;
+    return <div className={styles.erro}>{erro}</div>;
   }
 
   if (!filme) {
@@ -39,5 +31,3 @@ function Player() {
     </>
   );
 }
-
-export default Player;
