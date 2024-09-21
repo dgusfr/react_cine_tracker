@@ -5,6 +5,7 @@ import Banner from "components/Banner";
 import Titulo from "components/Titulo";
 import NaoEncontrada from "pages/NaoEncontrada";
 import styles from "./Player.module.css";
+import filmesData from "../../db.json"; // Importe o db.json
 
 function Player() {
   const { id } = useParams();
@@ -12,10 +13,18 @@ function Player() {
   const [filme, setFilme] = useState(null);
 
   useEffect(() => {
+    const filmeLocal = filmesData.filmes.find(
+      (filme) => filme.id === Number(id)
+    );
+
+    if (!filmeLocal) {
+      setFilme(null);
+      return;
+    }
+
     const fetchFilme = async () => {
-      const dadosDoFilme = await carregarFilme(id);
-      console.log("Dados do filme no Player:", dadosDoFilme);
-      setFilme(dadosDoFilme);
+      const filmeComNota = await carregarFilme(filmeLocal);
+      setFilme(filmeComNota);
     };
 
     fetchFilme();
@@ -25,11 +34,7 @@ function Player() {
     return <div className={styles.loading}>Carregando o filme...</div>;
   }
 
-  if (erro) {
-    return <div className={styles.erro}>{erro}</div>;
-  }
-
-  if (!filme) {
+  if (erro || !filme) {
     return <NaoEncontrada />;
   }
 
@@ -37,11 +42,11 @@ function Player() {
     <>
       <Banner imagem="player" />
       <Titulo>
-        <h1>{filme.title}</h1>
+        <h1>{filme.titulo}</h1>
       </Titulo>
       <section className={styles.container}>
-        <p>{filme.overview}</p>
-        <p>Nota: {filme.vote_average}/10</p>
+        <p>{filme.sinopse}</p>
+        <p>Nota: {filme.nota}/10</p>
       </section>
     </>
   );
