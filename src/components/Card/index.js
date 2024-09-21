@@ -28,7 +28,7 @@ function Card({ id, titulo, capa }) {
       <Link className={styles.link} to={`/filmes/${id}`}>
         <img src={capa} alt={titulo} className={styles.capa} />
         <h2>{titulo}</h2>
-        {nota !== null && <p className={styles.nota}>{nota}</p>}
+        {nota !== null && <p className={styles.nota}>Nota: {nota}</p>}
       </Link>
       <img
         src={!ehFavorito ? iconeFavoritar : iconeDesfavoritar}
