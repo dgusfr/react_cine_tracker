@@ -13,14 +13,14 @@ function Card({ id, titulo, capa }) {
   const ehFavorito = favorito.some((fav) => fav.id === id);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchNota = async () => {
       const filme = await carregarFilme(id);
       if (filme) {
-        setNota(filme.vote_average);
+        setNota(filme.vote_average.toFixed(1)); // Limita a nota a uma casa decimal
       }
     };
 
-    fetchData();
+    fetchNota();
   }, [id, carregarFilme]);
 
   return (
@@ -28,7 +28,7 @@ function Card({ id, titulo, capa }) {
       <Link className={styles.link} to={`/filmes/${id}`}>
         <img src={capa} alt={titulo} className={styles.capa} />
         <h2>{titulo}</h2>
-        {nota && <p>Nota: {nota}/10</p>}
+        {nota !== null && <p className={styles.nota}>{nota}</p>}
       </Link>
       <img
         src={!ehFavorito ? iconeFavoritar : iconeDesfavoritar}
