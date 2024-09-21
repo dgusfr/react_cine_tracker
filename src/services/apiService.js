@@ -14,6 +14,8 @@ export const buscarDetalhesDoFilme = async (id) => {
     return resposta.data;
   } catch (erro) {
     console.error("Erro ao buscar detalhes do filme:", erro);
-    throw erro;
+    throw new Error(
+      "Não foi possível carregar os detalhes do filme. Por favor, tente novamente mais tarde."
+    );
   }
 };
