@@ -1,10 +1,23 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 export const FavoritosContext = createContext();
 FavoritosContext.displayName = "Favoritos";
 
 export default function FavoritosProvider({ children }) {
   const [favorito, setFavorito] = useState([]);
+
+  // Carregar favoritos do localStorage quando o componente for montado
+  useEffect(() => {
+    const favoritosSalvos = localStorage.getItem("favoritos");
+    if (favoritosSalvos) {
+      setFavorito(JSON.parse(favoritosSalvos));
+    }
+  }, []);
+
+  // Salvar favoritos no localStorage sempre que a lista for atualizada
+  useEffect(() => {
+    localStorage.setItem("favoritos", JSON.stringify(favorito));
+  }, [favorito]);
 
   return (
     <FavoritosContext.Provider value={{ favorito, setFavorito }}>

@@ -47,6 +47,4 @@ export function useFilmeContext() {
   const context = useContext(FilmeContext);
   if (!context) {
     throw new Error("useFilmeContext must be used within a FilmeProvider");
-  }
-  return context;
-}
+ 
