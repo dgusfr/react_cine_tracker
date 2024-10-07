@@ -82,6 +82,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
 2. **Renderização dos Cards na Página Home**
 
    - **Arquivo:** `src/components/Card/index.js`
+     
    - **Descrição:**
      - O `Card` é um componente que representa cada filme na página Home.
      - Ele exibe a capa do filme, o título e a nota do filme.
