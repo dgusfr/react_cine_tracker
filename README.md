@@ -74,6 +74,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
      - **Interação:**
        - A página Home utiliza o componente `Banner` para exibir um banner na parte superior.
        - Em seguida, a página Home itera sobre os filmes listados no `db.json` e renderiza um `Card` para cada filme.
+         
        - **Componentes Usados:** `Banner`, `Card`, `Titulo`
        - **Dados Carregados:** Os filmes são carregados a partir do arquivo `db.json` e a nota é buscada da API do TMDB via `FilmeContext`.
 
