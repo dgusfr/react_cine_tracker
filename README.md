@@ -89,7 +89,9 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
      - **Interação:**
        - Quando o usuário clica em um card, ele é redirecionado para a página de detalhes do filme correspondente, passando o ID do filme na URL.
        - O `Card` usa o `useFavoritoContext` para permitir que o usuário adicione o filme à sua lista de favoritos.
+         
        - **Props Recebidas:** ID, título, capa, nota
+         
        - **Dados Exibidos:** Título do filme, capa, nota do TMDB.
 
 3. **Navegação e Exibição de Detalhes do Filme**
