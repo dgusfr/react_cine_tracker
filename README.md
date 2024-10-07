@@ -66,6 +66,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
    - **Descrição:**
      - Quando o usuário acessa a aplicação, ele é redirecionado automaticamente para a página Home.
      - A página Home é responsável por carregar e exibir os cards dos filmes disponíveis.
+       
      - **Interação:**
        - A página Home utiliza o componente `Banner` para exibir um banner na parte superior.
        - Em seguida, a página Home itera sobre os filmes listados no `db.json` e renderiza um `Card` para cada filme.
