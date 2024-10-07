@@ -51,6 +51,7 @@ Essa integração permitirá que a nota de avaliação de cada filme seja exibid
 - Visualização dos filmes favoritos em uma página dedicada.
   
 - Interface responsiva que se adapta a diferentes dispositivos.
+  
 - Futuro: integração com a API da TMDB para exibir a nota de avaliação dos filmes.
 
 ## Explicação
