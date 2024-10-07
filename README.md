@@ -130,7 +130,9 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
 
 O CineTracker é uma aplicação estruturada que oferece uma experiência rica para o usuário, permitindo a navegação fácil entre os filmes e a visualização de detalhes importantes. 
 
-O projeto utiliza uma combinação de dados locais (`db.json`) e dados dinâmicos da API do TMDB, com uma arquitetura de componentes organizada e clara. Cada parte da aplicação desempenha um papel importante na entrega de uma experiência coesa e eficiente.
+O projeto utiliza uma combinação de dados locais (`db.json`) e dados dinâmicos da API do TMDB, com uma arquitetura de componentes organizada e clara. 
+
+Cada parte da aplicação desempenha um papel importante na entrega de uma experiência coesa e eficiente.
 
 A documentação acima fornece uma visão completa e detalhada do fluxo do projeto, desde o carregamento inicial na página Home até a exibição detalhada dos filmes e a integração com a API para busca de notas.
 
