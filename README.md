@@ -52,7 +52,9 @@ Essa integração permitirá que a nota de avaliação de cada filme seja exibid
 
 ## Explicação
 
-O CineTracker é uma aplicação React que permite aos usuários navegar por uma lista de filmes, visualizar detalhes específicos de cada filme e verificar a nota do TMDB para esses filmes. Quando o usuário acessa a aplicação, ele é direcionado para a página Home, onde são exibidos cards dos principais filmes disponíveis na plataforma. O usuário pode clicar em qualquer card para ser redirecionado à página do filme, onde encontrará informações detalhadas sobre o mesmo, incluindo uma sinopse e a nota do TMDB.
+O CineTracker é uma aplicação React que permite aos usuários navegar por uma lista de filmes, visualizar detalhes específicos de cada filme e verificar a nota do TMDB para esses filmes. 
+
+Quando o usuário acessa a aplicação, ele é direcionado para a página Home, onde são exibidos cards dos principais filmes disponíveis na plataforma. O usuário pode clicar em qualquer card para ser redirecionado à página do filme, onde encontrará informações detalhadas sobre o mesmo, incluindo uma sinopse e a nota do TMDB.
 
 #### Fluxo Detalhado:
 
