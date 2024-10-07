@@ -45,6 +45,7 @@ Essa integração permitirá que a nota de avaliação de cada filme seja exibid
 ## Funcionalidades
 
 - Exibição de filmes pré-definidos na plataforma.
+  
 - Adicionar e remover filmes da lista de favoritos.
 - Visualização dos filmes favoritos em uma página dedicada.
 - Interface responsiva que se adapta a diferentes dispositivos.
