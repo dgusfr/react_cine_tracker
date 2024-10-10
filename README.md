@@ -88,6 +88,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
      
    - **Descrição:**
      - O `Card` é um componente que representa cada filme na página Home.
+       
      - Ele exibe a capa do filme, o título e a nota do filme.
      - **Interação:**
        - Quando o usuário clica em um card, ele é redirecionado para a página de detalhes do filme correspondente, passando o ID do filme na URL.
