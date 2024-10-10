@@ -97,6 +97,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
 3. **Navegação e Exibição de Detalhes do Filme**
 
    - **Arquivo:** `src/pages/Player/index.js`
+     
    - **Descrição:**
      - Quando o usuário clica em um card na página Home, ele é redirecionado para a página `Player`, que exibe detalhes sobre o filme selecionado.
        
