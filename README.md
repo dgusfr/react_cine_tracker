@@ -128,6 +128,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
 5. **Componente de Favoritos**
 
    - **Arquivo:** `src/contextos/Favoritos.js`
+     
    - **Descrição:**
      - O `FavoritosContext` é responsável por gerenciar a lista de filmes favoritos do usuário.
      - **Interação:**
