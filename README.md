@@ -140,6 +140,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
 
 6. **Configuração de Rotas**
    - **Arquivo:** `src/routes.js`
+     
    - **Descrição:**
      - O arquivo `routes.js` define as rotas da aplicação, associando cada URL a um componente.
      - **Interação:**
