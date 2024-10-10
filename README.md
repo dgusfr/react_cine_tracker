@@ -143,6 +143,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
      
    - **Descrição:**
      - O arquivo `routes.js` define as rotas da aplicação, associando cada URL a um componente.
+       
      - **Interação:**
        - As rotas configuradas incluem a página Home (`/`), a página de Favoritos (`/favoritos`), e a página de detalhes do filme (`/filmes/:id`).
        - **Componentes Usados:** `BrowserRouter`, `Route`, `Routes`
