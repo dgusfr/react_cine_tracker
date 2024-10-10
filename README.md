@@ -131,6 +131,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
      
    - **Descrição:**
      - O `FavoritosContext` é responsável por gerenciar a lista de filmes favoritos do usuário.
+       
      - **Interação:**
        - Quando o usuário clica no ícone de favorito em um card, o filme é adicionado ou removido da lista de favoritos.
        - A lista de favoritos é exibida na página de Favoritos.
