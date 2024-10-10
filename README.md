@@ -115,6 +115,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
 4. **Gerenciamento de Estado e API**
 
    - **Arquivo:** `src/contextos/FilmeContext.js`
+     
    - **Descrição:**
      - O `FilmeContext` é responsável por gerenciar o estado relacionado aos filmes e fazer as requisições à API do TMDB para obter a nota dos filmes.
      - **Interação:**
