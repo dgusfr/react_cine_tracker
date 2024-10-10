@@ -67,6 +67,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
 1. **Início do Fluxo: Acesso à Página Home**
 
    - **Arquivo:** `src/pages/Inicio/index.js`
+     
    - **Descrição:**
      - Quando o usuário acessa a aplicação, ele é redirecionado automaticamente para a página Home.
      - A página Home é responsável por carregar e exibir os cards dos filmes disponíveis.
