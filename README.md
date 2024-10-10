@@ -118,6 +118,7 @@ O usuário pode clicar em qualquer card para ser redirecionado à página do fil
      
    - **Descrição:**
      - O `FilmeContext` é responsável por gerenciar o estado relacionado aos filmes e fazer as requisições à API do TMDB para obter a nota dos filmes.
+       
      - **Interação:**
        - O `FilmeContext` é utilizado em toda a aplicação para buscar e armazenar os dados dos filmes.
        - Quando a nota do filme é buscada da API, ela é armazenada em cache para evitar múltiplas requisições para o mesmo filme.
